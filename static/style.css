@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #1e1e1e;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: inherit;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: auto;
+}
+
+footer {
+    padding: 10px 0;
+    border-top: 2px solid #444;
+    margin-top: auto;
+}
+
+nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex: 1; /* Faz com que o main ocupe o espaço restante entre o header e o footer */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: inherit;
+}
+
+.project-list {
+    list-style: none; /* Remove as bolinhas da lista de projetos */
+    padding-left: 0; /* Remove qualquer recuo padrão */
+}
+
+.project-list li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500;
+}
